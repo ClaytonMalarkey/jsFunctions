@@ -13,3 +13,8 @@ while (count < userNames.length){
 
     count ++;
 }
+
+function testFunction () {
+    console.log("a generic greeting");
+}
+testFunction();
