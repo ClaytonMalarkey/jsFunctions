@@ -18,3 +18,25 @@ function testFunction () {
     console.log("a generic greeting");
 }
 testFunction();
+
+function takeUserName (username) {
+    console.log("your username is " + username)
+}
+
+takeUserName("Clateman");
+
+function takeUserInLoop(users, search_user){
+    counter = 0;
+    while(counter < users.length){
+        if(users[counter].includes(search_user)){
+            console.log("the user " + users[counter] + " was a admin");
+        }else {
+            console.log("user " + users[counter] + " was not a admin");
+        }
+        counter ++;
+    }
+} 
+
+let UserArray = ["admin 1", " regular user 2", " an admin aslo", "test user", "test admin", "test user 2"];
+
+takeUserInLoop(UserArray, "admin");
